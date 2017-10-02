@@ -1,0 +1,10 @@
+#!/bin/bash
+#/ Usage: ./commit [COMMIT-ARGS]
+#/ Adds the ev3 file to Git's index, unzips it and adds that to the
+#/ index, too, and then commits the rest with the given arguments.
+
+git add 2017\ ev3.ev3 || exit 1
+rm -rf expanded
+unzip -qq -d expanded 2017\ ev3.ev3 || exit 1
+git add -v expanded || exit 1
+exec git commit "$@"
