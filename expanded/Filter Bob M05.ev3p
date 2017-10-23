@@ -36,7 +36,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w4" Joints="N(n1:SequenceOut) N(n4:SequenceIn)" />
                 <ConfigurableMethodCall Id="n5" Bounds="264 0 132 91" Target="PlaySoundFile\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="Snake hiss">
+                    <ConfigurableMethodTerminal ConfiguredValue="Elephant call">
                         <Terminal Id="Name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="100">
